@@ -1,0 +1,27 @@
+/* Custom scrollbar for testimonial */
+.testimonial-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #a78bfa #f3e8ff;
+}
+.testimonial-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+.testimonial-scroll::-webkit-scrollbar-track {
+  background: #f3e8ff;
+  border-radius: 10px;
+}
+.testimonial-scroll::-webkit-scrollbar-thumb {
+  background-color: #a78bfa;
+  border-radius: 10px;
+}
+input[type="file"] {
+  display: none;
+}
+
+/* Custom produk */
+.custom-product-image {
+  width: 300px; /* Ubah sesuai kebutuhan */
+  height: 250px; /* Ubah sesuai kebutuhan */
+  object-fit: cover; /* Agar gambar tetap rapi dan proporsional */
+  display: block;
+}

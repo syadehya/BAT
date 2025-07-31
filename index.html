@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Toko Konveksi Pakaian</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css"></link>
+  </head>
+  <body class="bg-gray-50 font-sans antialiased text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+          <a
+            href="#"
+            class="flex items-center gap-1 text-2xl font-extrabold text-purple-600"
+          >
+            <span>Berkah</span><span class="text-pink-500">Abadi</span><span>Tayu</span>
+          </a>
+          <ul class="hidden md:flex space-x-6 text-gray-700 font-medium">
+            <li>
+              <a
+                href="#home"
+                class="hover:text-purple-600 transition duration-150"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="#produk"
+                class="hover:text-purple-600 transition duration-150"
+                >Produk</a
+              >
+            </li>
+            <li>
+              <a
+                href="#bahan"
+                class="hover:text-purple-600 transition duration-150"
+                >Bahan</a
+              >
+            </li>
+            <li>
+              <a
+                href="#review"
+                class="hover:text-purple-600 transition duration-150"
+                >Ulasan</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pesan"
+                class="hover:text-purple-600 transition duration-150"
+                >Pesan Sekarang</a
+              >
+            </li>
+            <li>
+              <a
+                href="#lokasi"
+                class="hover:text-purple-600 transition duration-150"
+                >Lokasi</a
+              >
+            </li>
+          </ul>
+          <div class="hidden md:flex items-center gap-4">
+            <button
+              class="bg-purple-600 hover:bg-purple-700 text-white rounded px-4 py-2 transition"
+            >
+              Masuk
+            </button>
+          </div>
+          <button
+            id="mobile-menu-button"
+            class="md:hidden focus:outline-none focus:ring-2 focus:ring-purple-600"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-purple-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden bg-white border-t border-gray-200"
+      >
+        <ul class="flex flex-col p-4 space-y-3 text-gray-700 font-medium">
+          <li>
+            <a
+              href="#home"
+              class="block hover:text-purple-600 transition duration-150"
+              >Beranda</a
+            >
+          </li>
+          <li>
+            <a
+              href="#produk"
+              class="block hover:text-purple-600 transition duration-150"
+              >Produk</a
+            >
+          </li>
+          <li>
+            <a
+              href="#bahan"
+              class="block hover:text-purple-600 transition duration-150"
+              >Bahan</a
+            >
+          </li>
+          <li>
+            <a
+              href="#review"
+              class="block hover:text-purple-600 transition duration-150"
+              >Ulasan</a
+            >
+          </li>
+          <li>
+            <a
+              href="#pesan"
+              class="block hover:text-purple-600 transition duration-150"
+              >Pesan Sekarang</a
+            >
+          </li>
+          <li>
+            <a
+              href="#lokasi"
+              class="block hover:text-purple-600 transition duration-150"
+              >Lokasi</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section
+      id="home"
+      class="bg-gradient-to-r from-purple-600 to-pink-500 text-white"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-16"
+      >
+        <div class="max-w-xl mb-12 md:mb-0">
+          <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+            Konveksi Pakaian Profesional
+          </h1>
+          <p class="text-lg mb-6 leading-relaxed max-w-md">
+            Melayani pembuatan kaos sablon, rompi, sablon DTF, jersey, topi,
+            gamis, dan berbagai kebutuhan pakaian custom dengan kualitas terbaik
+            dan berbagai pilihan bahan.
+          </p>
+          <a
+            href="#produk"
+            class="inline-block bg-white text-purple-700 font-semibold px-6 py-3 rounded shadow hover:bg-purple-50 transition"
+          >
+            Belanja Sekarang
+          </a>
+        </div>
+        <div
+          class="rounded-xl overflow-hidden shadow-lg max-w-md w-full md:w-auto"
+        >
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/522a62e5-1aeb-4a36-a17f-869036edb18e.png"
+            alt="Model pria dan wanita memakai pakaian modis dan nyaman, latar belakang warna pastel, tanaman hias di bawah"
+            class="w-full h-full object-cover"
+            onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a631fd53-8a91-4294-8961-bb83b2ebd05b.png';"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="produk" class="container mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold text-center mb-12 text-purple-700">
+        Produk Kami
+      </h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+      >
+        <!-- Product Cards -->
+        <article
+          class="bg-white rounded-xl shadow hover:shadow-lg transition duration-200 flex flex-col"
+        >
+          <div class="overflow-hidden rounded-t-xl flex justify-center">
+            <img
+                src="images/produk/luffy.png"
+                alt="Kaos sablon warna biru dengan desain simpel, diletakkan di latar putih minimalis"
+                class="custom-product-image"
+                onerror="this.onerror=null;this.src='https://images/produk/luffy.png';"
+                />
+
+            </div>
+            <div class="p-4 flex flex-col flex-grow">
+              <h3 class="font-semibold text-lg mb-2">Kaos Sablon</h3>
+              <p class="text-gray-600 flex-grow">
+                Pembuatan kaos dengan sablon berkualitas, cocok untuk komunitas,
+                event, dan merchandize.
+              </p>
+              <button
+                onclick="scrollToForm('Kaos Sablon')"
+                class="mt-4 bg-purple-600 text-white rounded px-4 py-2 hover:bg-purple-700 transition self-start"
+              >
+                Pesan Sekarang
+              </button>
+            </div>
+          </article>
+
+          <article
+          class="bg-white rounded-xl shadow hover:shadow-lg transition duration-200 flex flex-col"
+        >
+          <div class="overflow-hidden rounded-t-xl flex justify-center">
+            <img
+            src="images/produk/sragam sd.png"
+            alt="Seragam sekolah dasar dengan desain menarik dan bahan nyaman,
+            siap untuk berbagai kegiatan belajar mengajar."
+            class="custom-product-image"
+            onerror="this.onerror=null;this.src='https://images/produk/sragam sd.png';"
+          />
+          
+            </div>
+            <div class="p-4 flex flex-col flex-grow">
+              <h3 class="font-semibold text-lg mb-2">Seragam Sekolah Dasar</h3>
+              <p class="text-gray-600 flex-grow">
+                Seragam sekolah dasar dengan desain menarik dan bahan nyaman,
+                siap untuk berbagai kegiatan belajar mengajar.
+              </p>
+              <button
+                onclick="scrollToForm('Seragam Sekolah Dasar')"
+                class="mt-4 bg-purple-600 text-white rounded px-4 py-2 hover:bg-purple-700 transition self-start"
+              >
+                Pesan Sekarang
+              </button>
+            </div>
+          </article>
+
+          <article
+          class="bg-white rounded-xl shadow hover:shadow-lg transition duration-200 flex flex-col"
+        >
+          <div class="overflow-hidden rounded-t-xl flex justify-center">
+            <img
+                src="images/produk/multicolor dtf.jpg"
+                alt="Sablon DTF (Direct to Film) dengan warna cerah dan detail tajam,
+                cocok untuk desain kompleks dan berwarna."
+                class="custom-product-image"
+                onerror="this.onerror=null;this.src='https://images/produk/multicolor dtf.jpg';"
+                />
+
+            </div>
+            <div class="p-4 flex flex-col flex-grow">
+              <h3 class="font-semibold text-lg mb-2">Sablon Dtf</h3>
+              <p class="text-gray-600 flex-grow">
+                Sablon DTF (Direct to Film) dengan warna cerah dan detail tajam,
+                cocok untuk desain kompleks dan berwarna.
+              </p>
+              <button
+                onclick="scrollToForm('Sablon DTF')"
+                class="mt-4 bg-purple-600 text-white rounded px-4 py-2 hover:bg-purple-700 transition self-start"
+              >
+                Pesan Sekarang
+              </button>
+            </div>
+          </article>
+
+        <article
+          class="bg-white rounded-xl shadow hover:shadow-lg transition duration-200 flex flex-col"
+        >
+          <div class="overflow-hidden rounded-t-xl flex justify-center">
+            <img
+                src="images/produk/top.jpg"
+                alt="Jersey olahraga custom dengan bahan yang ringan dan cepat kering."
+                class="custom-product-image"
+                onerror="this.onerror=null;this.src='https://images/produk/top.jpg';"
+                />
+
+          </div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-semibold text-lg mb-2">Jersey</h3>
+            <p class="text-gray-600 flex-grow">
+              Jersey olahraga custom dengan bahan yang ringan dan cepat kering.
+            </p>
+            <button
+              onclick="scrollToForm('Jersey')"
+              class="mt-4 bg-purple-600 text-white rounded px-4 py-2 hover:bg-purple-700 transition self-start"
+            >
+              Pesan Sekarang
+            </button>
+          </div>
+        </article>
+
+        <article
+          class="bg-white rounded-xl shadow hover:shadow-lg transition duration-200 flex flex-col"
+        >
+          <div class="overflow-hidden rounded-t-xl flex justify-center">
+            <img
+                src="images/produk/topi.jpg"
+                alt="Topi custom dengan bordir detail dan bahan berkualitas tinggi."
+                class="custom-product-image"
+                onerror="this.onerror=null;this.src='https://images/produk/topi.jpg';"
+                />
+
+          </div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-semibold text-lg mb-2">Topi</h3>
+            <p class="text-gray-600 flex-grow">
+              Topi custom dengan bordir detail dan bahan berkualitas tinggi.
+            </p>
+            <button
+              onclick="scrollToForm('Topi')"
+              class="mt-4 bg-purple-600 text-white rounded px-4 py-2 hover:bg-purple-700 transition self-start"
+            >
+              Pesan Sekarang
+            </button>
+          </div>
+        </article>
+
+        <article
+          class="bg-white rounded-xl shadow hover:shadow-lg transition duration-200 flex flex-col"
+        >
+          <div class="overflow-hidden rounded-t-xl flex justify-center">
+            <img
+                src="images/produk/OOTD.jpg"
+                alt="Gamis custom dengan bahan lembut dan desain elegan untuk wanita
+                muslimah."
+                class="custom-product-image"
+                onerror="this.onerror=null;this.src='https://images/produk/OOTD.png';"
+                />
+
+          </div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-semibold text-lg mb-2">Gamis</h3>
+            <p class="text-gray-600 flex-grow">
+              Gamis custom dengan bahan lembut dan desain elegan untuk wanita
+              muslimah.
+            </p>
+            <button
+              onclick="scrollToForm('Gamis')"
+              class="mt-4 bg-purple-600 text-white rounded px-4 py-2 hover:bg-purple-700 transition self-start"
+            >
+              Pesan Sekarang
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Bahan Section -->
+    <section id="bahan" class="bg-purple-50 py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-10 text-purple-700 text-center">
+          Berbagai Bahan Pilihan
+        </h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 max-w-6xl mx-auto"
+        >
+          <div class="bg-white rounded-xl shadow p-6 text-center">
+            <h3 class="font-semibold text-xl mb-2 text-purple-600">
+              Cotton Combed 24s
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Bahan katun halus, nyaman dipakai sehari-hari, ideal untuk kaos
+              sablon.
+            </p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 text-center">
+            <h3 class="font-semibold text-xl mb-2 text-purple-600">
+              Cotton Combed Baby Terry 24s
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Tekstur yang lebih lembut dan tebal, nyaman dan tahan lama untuk
+              pakaian casual.
+            </p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 text-center">
+            <h3 class="font-semibold text-xl mb-2 text-purple-600">
+              CVC Pique Hexagon 24s
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Campuran katun dan polyester yang kuat, warna cerah dan bahan
+              bernapas.
+            </p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 text-center">
+            <h3 class="font-semibold text-xl mb-2 text-purple-600">
+              Polyester Activedry 24s
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Bahan polyester khusus untuk olahraga, menyerap keringat dan cepat
+              kering.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ulasan Customer -->
+    <section id="review" class="container mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold mb-10 text-purple-700 text-center">
+        Ulasan Customer
+      </h2>
+      <div
+        class="flex flex-col sm:flex-row gap-10 max-w-5xl mx-auto testimonial-scroll overflow-x-auto"
+      >
+        <blockquote class="bg-white shadow rounded-xl p-6 w-80 flex-shrink-0">
+          <p class="text-gray-700 mb-4">
+            "Pelayanan sangat cepat dan hasil sablon kaosnya bagus serta tahan
+            lama. Recommended banget!"
+          </p>
+          <footer class="text-sm font-semibold text-purple-600">
+            - Ahmad, Jakarta
+          </footer>
+        </blockquote>
+        <blockquote class="bg-white shadow rounded-xl p-6 w-80 flex-shrink-0">
+          <p class="text-gray-700 mb-4">
+            "Bahan gamisnya halus dan nyaman dipakai. Jahitan rapi dan sesuai
+            pesanan."
+          </p>
+          <footer class="text-sm font-semibold text-purple-600">
+            - Siti, Bandung
+          </footer>
+        </blockquote>
+        <blockquote class="bg-white shadow rounded-xl p-6 w-80 flex-shrink-0">
+          <p class="text-gray-700 mb-4">
+            "Rompi yang dipesan untuk event komunitas kami sangat berkualitas
+            dan pas ukurannya."
+          </p>
+          <footer class="text-sm font-semibold text-purple-600">
+            - Budi, Surabaya
+          </footer>
+        </blockquote>
+        <blockquote class="bg-white shadow rounded-xl p-6 w-80 flex-shrink-0">
+          <p class="text-gray-700 mb-4">
+            "Sablon DTF-nya warna jelas dan tidak mudah pudar, pelayanan pun
+            ramah dan helpful."
+          </p>
+          <footer class="text-sm font-semibold text-purple-600">
+            - Rina, Yogyakarta
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Pesan Sekarang Form -->
+    <section id="pesan" class="bg-purple-50 py-16">
+      <div class="container mx-auto max-w-4xl px-6">
+        <h2 class="text-3xl font-bold text-center mb-10 text-purple-700">
+          Form Pesan Sekarang
+        </h2>
+        <form id="order-form" class="bg-white p-8 rounded-xl shadow space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block font-medium mb-1"
+                >Nama Lengkap</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Nama Anda"
+                class="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600"
+              />
+            </div>
+            <div>
+              <label for="phone" class="block font-medium mb-1"
+                >Nomor Telepon</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="0812xxxxxxx"
+                class="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="order-item" class="block font-medium mb-1"
+              >Pesanan</label
+            >
+            <select
+              id="order-item"
+              name="orderItem"
+              required
+              class="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600"
+            >
+              <option value="" disabled selected>Pilih produk</option>
+              <option>Kaos Sablon</option>
+              <option>Rompi</option>
+              <option>Sablon DTF</option>
+              <option>Jersey</option>
+              <option>Topi</option>
+              <option>Gamis</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="quantity" class="block font-medium mb-1"
+                >Berapa Banyak Pesanan</label
+              >
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                required
+                min="1"
+                placeholder="Contoh: 10"
+                class="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600"
+              />
+            </div>
+            <div>
+              <label for="extra" class="block font-medium mb-1"
+                >Pesanan Tambahan (Jika ada)</label
+              >
+              <input
+                type="text"
+                id="extra"
+                name="extra"
+                placeholder="Contoh: Tambahkan logo di dada"
+                class="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="date" class="block font-medium mb-1"
+              >Tanggal Dibutuhkan</label
+            >
+            <input
+              type="date"
+              id="date"
+              name="date"
+              required
+              min=""
+              class="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600"
+            />
+          </div>
+
+          <!-- Ukuran -->
+          <fieldset class="border border-gray-300 rounded p-4">
+            <legend class="font-semibold text-lg mb-3">Ukuran Pakaian</legend>
+            <div class="grid grid-cols-2 gap-6">
+              <div>
+                <label for="size" class="block font-medium mb-1">Ukuran</label>
+                <select
+                  id="size"
+                  name="size"
+                  required
+                  class="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600"
+                >
+                  <option value="" disabled selected>Pilih ukuran</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+                  <option value="XXXL">XXXL</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block font-medium mb-1"
+                  >Detail Ukuran (Panjang badan, Lebar badan)</label
+                >
+                <div class="flex gap-3">
+                  <input
+                    type="number"
+                    id="length"
+                    name="length"
+                    placeholder="Panjang badan (cm)"
+                    min="0"
+                    class="w-1/2 rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="width"
+                    name="width"
+                    placeholder="Lebar badan (cm)"
+                    min="0"
+                    class="w-1/2 rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <div>
+            <label for="address" class="block font-medium mb-1"
+              >Alamat Lengkap</label
+            >
+            <textarea
+              id="address"
+              name="address"
+              rows="2"
+              required
+              placeholder="Alamat pengiriman atau penjemputan"
+              class="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600"
+            ></textarea>
+          </div>
+
+          <div>
+            <label for="message" class="block font-medium mb-1"
+              >Pesan Tambahan</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="3"
+              placeholder="Contoh: Mohon diselesaikan sebelum tanggal tersebut."
+              class="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600"
+            ></textarea>
+          </div>
+
+          <div>
+            <label class="block font-medium mb-1" for="productImage"
+              >Upload Gambar Produk (opsional)</label
+            >
+            <label
+              for="productImage"
+              class="border border-dashed border-gray-400 rounded cursor-pointer flex items-center justify-center h-40 bg-white hover:bg-purple-50 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-purple-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 15a4 4 0 004 4h10a4 4 0 004-4v-3a4 4 0 00-4-4H7a4 4 0 00-4 4v3z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M7 10v.01M7 14v.01M10 10v.01M10 14v.01M13 10v.01M13 14v.01"
+                />
+              </svg>
+              <span class="ml-2 text-purple-600">Klik untuk pilih file</span>
+            </label>
+            <input
+              type="file"
+              id="productImage"
+              name="productImage"
+              accept="image/*"
+            />
+            <p id="fileName" class="mt-2 text-gray-600 text-sm"></p>
+          </div>
+
+          <button
+            type="submit"
+            class="bg-purple-600 text-white px-6 py-3 rounded font-semibold hover:bg-purple-700 transition w-full md:w-auto"
+          >
+            Kirim Pesanan
+          </button>
+        </form>
+
+        <div
+          id="formSuccess"
+          class="hidden mt-6 p-4 rounded bg-green-100 text-green-800 font-semibold"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Lokasi Google Map -->
+    <section id="lokasi" class="container mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold mb-8 text-purple-700 text-center">
+        Lokasi Kami
+      </h2>
+      <div
+        class="w-full h-96 rounded-xl overflow-hidden shadow-lg border border-gray-300"
+      >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3963.905107688547!2d111.044915!3d-6.5336676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e712d6ae4e143f5%3A0x9061bc04ba27b5c9!2sKonveksi%20Berkah%20Abadi%20Tayu!5e0!3m2!1sid!2sid!4v1751594472717!5m2!1sid!2sid"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Lokasi Toko Konveksi Pakaian"
+          onerror="this.parentElement.innerHTML = '<div class=\'flex items-center justify-center bg-gray-100 h-full text-gray-500\'>Peta tidak dapat dimuat saat ini.</div>';"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-purple-600 text-white py-6 text-center">
+      <p>© 2025 BAT OFFICIAL</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
